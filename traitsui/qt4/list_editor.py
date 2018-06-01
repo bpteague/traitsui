@@ -437,6 +437,7 @@ class SimpleEditor(Editor):
                 if editor is not None:
                     editor.dispose()
                     editor.control = None
+                control.setParent(None)
                 control.deleteLater()
             child = layout.takeAt(0)
         del child
